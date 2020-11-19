@@ -1,1 +1,2 @@
 instapy==0.6.12
+gunicorn==20.0.4

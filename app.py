@@ -4,7 +4,7 @@ from threading import Thread
 import os
 
 
-
+print('app started')
 def func1():
     session = InstaPy(username=os.environ['USERNAME'], password=os.environ['PASSWORD'], headless_browser=False)
 
@@ -22,6 +22,7 @@ def func1():
         session.set_do_like(enabled=True, percentage=70)
         session.set_do_comment(enabled=True, percentage=35)
         session.set_comments(['Awesome', 'Really Cool', 'I like your stuff'])
-
+    print('Success')
+func1()
 #Thread(target = func1).start()
 #Thread(target = func1).start()
